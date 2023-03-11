@@ -1,10 +1,13 @@
-const createDiv = () => {
-	const div = document.createElement("div")
-	const statement = document.createTextNode("Cargo Tracking App")
+import { Destination } from "./Destination"
 
-	div.append(statement)
+const destination = new Destination()
 
-	document.body.appendChild(div)
-}
+console.log(destination)
 
-createDiv()
+new google.maps.Map(document.getElementById("g-map"), {
+	zoom: 1.6,
+	center: {
+		lat: 0,
+		lng: 20,
+	},
+})
