@@ -1,5 +1,4 @@
 import { apiKey } from "../apiKey.js"
-console.log(apiKey)
 
 const url = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`
 
