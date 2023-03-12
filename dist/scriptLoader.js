@@ -1,6 +1,6 @@
 import { apiKey } from "../apiKey.js"
 console.log(apiKey)
-// const apiKey = "AIzaSyClJzcZi6RXSZNE5moacmuu2Mm5eKsFDbQ"
+
 const url = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`
 
 const loadMap = async () => {
