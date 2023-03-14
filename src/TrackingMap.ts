@@ -1,7 +1,4 @@
-import { Destination } from "./Destination"
-import { Cargo } from "./Cargo"
-
-interface Entity {
+export interface Entity {
 	location: {
 		lat: number
 		lon: number

@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker"
+import { Entity } from "./TrackingMap"
 
-export class Cargo {
+export class Cargo implements Entity {
 	trackingId: string
 	location: {
 		lat: number
