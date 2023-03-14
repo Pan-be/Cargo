@@ -6,6 +6,7 @@ interface Entity {
 		lat: number
 		lon: number
 	}
+	popupText(): string
 }
 
 export class TrackingMap {
@@ -31,7 +32,7 @@ export class TrackingMap {
 		})
 		marker.addListener("click", () => {
 			const popup = new google.maps.InfoWindow({
-				content: "here we are",
+				content: entity.popupText(),
 			})
 
 			popup.open(this.googleMap, marker)

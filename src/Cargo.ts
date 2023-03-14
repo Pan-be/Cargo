@@ -14,4 +14,7 @@ export class Cargo {
 			lon: parseFloat(faker.address.longitude()),
 		}
 	}
+	popupText(): string {
+		return `<h3>Cargo name: ${this.trackingId}</h3>`
+	}
 }

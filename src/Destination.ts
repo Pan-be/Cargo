@@ -14,4 +14,8 @@ export class Destination {
 			lon: parseFloat(faker.address.longitude()),
 		}
 	}
+
+	popupText(): string {
+		return `<h3>Receiver name: ${this.receiver}</h3>`
+	}
 }
